@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>ComCamp36_FORM_EXAMPLE</title>
+</head>
+<body>
+    <div class="font-bold text-xl justify-center flex mb-4 mt-2 underline">
+        Form Example
+    </div>
+    <!-- Act like a wrapper -->
+     <div class="flex justify-center items-center">
+         <form class="flex flex-col gap-5" action="">
+             <div>
+                <!-- Text -->
+                <label for="text">Text: </label>
+                <input placeholder="insert text here" type="text" class="border border-gray-200 focus:border-gray-600 rounded px-2">
+             </div>
+             <div>
+                <!-- Email -->
+                <label for="email">Email: </label>
+                <input placeholder="example@comcamp.io" type="email" class="border border-gray-200 focus:border-gray-600 rounded px-2">
+             </div>
+             <div>
+                <!-- Password -->
+                <label for="Password">Password: </label>
+                <input type="password" placeholder="*******" class="border border-gray-200 focus:border-gray-600 rounded px-2">
+            </div>
+             <div>
+                <!-- Number -->
+                 <label for="number">Number: </label>
+                 <input type="number" class="border border-gray-200 focus:border-gray-600 rounded px-2">
+             </div>
+             <div class="flex flex-col">
+                <!-- Ratio -->
+                 <div>
+                     <input type="radio">
+                     <label for="Ratio1">Ratio 1</label>
+                 </div>
+                 <div>
+                     <input type="radio">
+                     <label for="Ratio2">Ratio 2</label>
+                 </div>
+                 <div>
+                     <input type="radio">
+                     <label for="Ratio3">Ratio 3</label>
+                 </div>
+             </div>
+             <div>
+                <!-- Checkbox -->
+                 <input type="checkbox">
+                 <label for="checkbox">checkbox</label>
+             </div>
+             <div>
+                <!-- Date -->
+                 <label for="date">Date: </label>
+                 <input type="date" class="border border-gray-200 focus:border-gray-600 rounded">
+             </div>
+             <div>
+                <!-- File -->
+                 <label for="file">File: </label>
+                 <input type="file" class="border border-gray-200 focus:border-gray-600 rounded">
+             </div>
+             <div>
+                <!-- Range -->
+                 <div class="flex flex-row items-center space-x-2">
+                     <label for="range">Range: </label>
+                     <input type="range">
+                 </div>
+             </div>
+             <!-- There are a lot more than this -->
+         </form>
+     </div>
+</body>
+</html>
