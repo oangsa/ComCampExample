@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>VERY_GOOD_CALCULATOR</title>
+</head>
+<body>
+    <div class="bg-[#141414] min-h-screen text-white flex items-center justify-center">
+        <div class="min-w-[320px] bg-black flex flex-col gap-4 p-4 rounded-2xl">
+            <div id="key-wrapper" class="overflow-x-auto bg-[#141414] min-h-[100px] flex items-end justify-end flex-col p-4 rounded-[10px]">
+                <div id="display" class="text-[1.2rem] tracking-[2px] flex gap-[5px] items-center text-[rgba(255,255,255,0.5)] justify-end">
+                    1+1
+                </div>
+            </div>
+            <div class="grid grid-cols-[repeat(4,1fr)] gap-[0.3rem]">
+                <button id="AC" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    AC
+                </button>
+                <button id="C" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    C
+                </button>
+                <button id="%" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    %
+                </button>
+                <button id="/" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    /
+                </button>
+                <button id="7" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    7
+                </button>
+                <button id="8" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    8
+                </button>
+                <button id="9" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    9
+                </button>
+                <button id="*" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    x
+                </button>
+                <button id="4" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    4
+                </button>
+                <button id="5" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    5
+                </button>
+                <button id="6" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    6
+                </button>
+                <button id="-" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    -
+                </button>
+                <button id="1" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    1
+                </button>
+                <button id="2" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    2
+                </button>
+                <button id="3" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    3
+                </button>
+                <button id="+" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    +
+                </button>
+                <button id="." class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    .
+                </button>
+                <button id="0" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742]">
+                    0
+                </button>
+                <button id="EQUALS" class="bg-[#141414] flex cursor-pointer items-center justify-center p-4 rounded-[5px] hover:bg-[#4ccdc742] col-[span_2] bg-[#4ccdc6] font-semibold hover:bg-[#4CCDC6] text-red-500">
+                    =
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"/>
+</body>
+</html>
