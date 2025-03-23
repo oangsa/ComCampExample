@@ -1,7 +1,7 @@
 // This is the most ass script Ive ever wrote. But it works!!!
 
 function isOperator(value) {
-  return value === "+" || value === "-" || value === "*" || value === "/" || value === "%";
+    // TODO:
 }
 
 const keys = [
@@ -27,7 +27,7 @@ const keys = [
 ];
 
 let display = document.getElementById("display");
-let isEqual = false;
+let isEqualPressed = false;
 
 display.textContent = "";
 
@@ -36,46 +36,26 @@ keys.forEach((key) => {
     btn.addEventListener("click", () => {
 
         // Reset display if equal was pressed
-        if (isEqual) {
+        if (isEqualPressed) {
             if (!isOperator(key)) display.textContent = "";
-            isEqual = false;
+            isEqualPressed = false;
             display.className = "text-[1.2rem] tracking-[2px] flex gap-[5px] items-center text-[rgba(255,255,255,0.5)] justify-end"
         }
 
         if (key === "AC") {
-            display.textContent = "";
+            // TODO:
         }
         else if (key === "C") {
-            display.textContent = display.textContent.slice(0, -1);
+            // TODO:
         }
         else if (key === "EQUALS") {
-            // Just use Eval :)
-            try {
-                display.textContent = eval(display.textContent);
-            }
-            catch (error) {
-                display.textContent = "Error";
-                display.className = "text-[1.2rem] tracking-[2px] flex gap-[5px] items-center text-[rgba(255,255,255,0.5)] justify-end text-red-400"
-                isEqual = true;
-                return;
-            }
-            // Make things better
-            display.className = "text-[1.2rem] tracking-[2px] flex gap-[5px] items-center text-[rgba(255,255,255,0.5)] justify-end text-[1.7rem] text-white"
-            isEqual = true;
+            // TODO:
         }
         else if (isOperator(key) || key === ".") {
-            // Prevent multiple operators
-            if (isOperator(display.textContent.slice(-1)) || display.textContent.slice(-1) === ".") {
-                display.textContent = display.textContent.slice(0, -1) + key;
-                return;
-            }
-            if (display.textContent === "" && key === '.') display.textContent += '0';
-            display.textContent += key;
+            // TODO:
         }
         else {
-            // Prevent multiple zeros
-            if (display.textContent === '0' && key === '0') return;
-            display.textContent += key;
+            // TODO:
         }
     });
 });
