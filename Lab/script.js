@@ -26,13 +26,15 @@ const keys = [
   "EQUALS",
 ];
 
+// Get the element that have id called "display"
 let display = document.getElementById("display");
 let isEqualPressed = false;
 
 display.textContent = "";
 
 keys.forEach((key) => {
-    const btn = document.getElementById(key);
+    // TODO:
+    const btn = document.getElementById(...);
     btn.addEventListener("click", () => {
 
         // Reset display if equal was pressed
