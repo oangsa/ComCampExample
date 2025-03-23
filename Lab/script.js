@@ -35,7 +35,7 @@ display.textContent = "";
 keys.forEach((key) => {
     // TODO:
     const btn = document.getElementById(...);
-    btn.addEventListener("click", () => {
+    btn.addEventListener(..., () => {
 
         // Reset display if equal was pressed
         if (isEqualPressed) {
