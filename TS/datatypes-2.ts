@@ -32,4 +32,4 @@ let obj: object = {
     }
 }
 
-console.log(obj);
+console.log(obj.name);
